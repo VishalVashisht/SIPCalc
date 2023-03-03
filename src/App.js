@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='super-div'>
+      <div className='dashboard-div'>
+        <h4>{"Dashboard"}</h4>
+
+        </div>
+
+      <div className='white-div'>
+
+        <h2>{"SIP Calculator"}</h2>
+        <p>{"It tells you how much wealth you can create by making monthly investment"}</p>
+
+          <div className='sipcalc-div'>
+
+          </div>
+
+          <div className='graph-div'>
+
+          </div>
+          
+      </div>
+
     </div>
+    </>
   );
 }
 
