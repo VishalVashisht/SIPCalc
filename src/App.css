@@ -9,11 +9,13 @@
   width: 100%;
   height: 100vh;
   border: 2px;
-  background-color: pink;
+  /* background-color: black; */
+  background-color: white;
 }
 
 .dashboard-div{
-  background-color: rgb(60, 60, 134);
+  /* background-color: rgb(60, 60, 134); */
+  background-color: #1AA7EC;;
   display: inline-block;
   width: 12%;
   height: 100%;
