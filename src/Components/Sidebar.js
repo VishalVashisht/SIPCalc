@@ -4,7 +4,10 @@ export default function Sidebar(){
 
     return(
         <div className='dashboard-div'>
-        <h4>{"Dashboard"}</h4>
+        <p>{"Dashboard"}</p>
+        <p>{"Clients"}</p>
+        <p>{"Folio LookUp"}</p>
+        <p>{"Invest Online"}</p>
 
         </div>
     );
