@@ -10,15 +10,11 @@ export default function SIPCalc(){
             <h2>{"SIP Calculator"}</h2>
             <p>{"It tells you how much wealth you can create by making monthly investment"}</p>
           </div>
-
         <div className="leftPanel">
           <Calc/>
         </div>
-
         <div className="rightPanel">
-          <h1>{"Vishal"}</h1>
         </div>
-
       </div>
     )
 }

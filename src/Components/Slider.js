@@ -2,8 +2,8 @@ import react from "react";
 
 export default function SliderComponent({value, handleChange, min, max, step}) {
     return(
-        <div className="slider">
-            <input 
+        <div className="container">
+            <input
                 type="range" 
                 defaultValue={value} 
                 onChange={handleChange}
