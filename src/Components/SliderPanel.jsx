@@ -3,23 +3,24 @@ import { useState } from "react";
 import SliderComponent from "./Slider";
 
 export default function SliderPanel(props){
-    const[value, setValue] = useState(props);
+    const[value, setValue] = useState(0);
 
     const handleChange = (event)=>{
         setValue(event.target.value);
+        // setValue(document.getElementById(props.field).value);
     };
     
     return(
         <>
         <br />
         <div className="calc">
-            <div className="mothlyInvestmetDiv">
+            <div className={props.field}>
                 <div>
-                <h3>{"Monthly Investment (Rs.)"}</h3>
-                <input id="monthlyinvestment" className="Input" type="int" value={value} />
+                <h3>{props.panelName}</h3>
+                <input className="Input" type="int" value={value} />
                 </div>
                 <br />
-                <SliderComponent value={value} handleChange={handleChange} min={50000} max={1000000} step={100}/>
+                <SliderComponent value={value} handleChange={handleChange} min={props.min} max={props.max} step={1}/>
                 <svg width="100%" height="25">
                     <line
                     x1="4"
@@ -32,7 +33,7 @@ export default function SliderPanel(props){
                 />
             </svg>
             </div>
-            <br />
+            {/* <br />
             <br />
             <div className="investmentPeriodDiv">
                 <div>
@@ -94,7 +95,7 @@ export default function SliderPanel(props){
                     stroke-dasharray="1 50"
                     />
                 </svg>
-            </div>
+            </div> */}
         </div>
         </>
     )
