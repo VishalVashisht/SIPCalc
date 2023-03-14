@@ -1,7 +1,31 @@
-import React from "react";
 import Calc from "./Calc";
+import Graph from "./Graph";
+import { React, useState } from "react";
 
 export default function SIPCalc(){
+  const[mi, setValuemi] = useState(0);
+
+  const handleMi = (event)=>{
+      setValuemi(mi);
+  };
+
+  const[ip, setValueip] = useState(0);
+
+  const handleIp = (event)=>{
+      setValueip(ip);
+  };
+
+  const[ror, setValueror] = useState(0);
+
+  const handleRor = (event)=>{
+      setValueror(ror);
+  };
+
+  const[roi, setValueroi] = useState(0);
+
+  const handleRoi = (event)=>{
+      setValueroi(roi);
+  };
 
     return(
         <div className='white-div'>
@@ -11,9 +35,18 @@ export default function SIPCalc(){
             <p>{"It tells you how much wealth you can create by making monthly investment"}</p>
           </div>
         <div className="leftPanel">
-          <Calc/>
+          <Calc 
+            mi={mi}
+            handleMi={setValuemi}
+            ip={ip}
+            handleIp={setValueip}
+            ror={ror}
+            handleRor={setValueror}
+            roi={roi}
+            handleRoi={setValueroi}/>
         </div>
         <div className="rightPanel">
+        <Graph mi={mi} ip={ip} ror={ror} roi={roi}/>
         </div>
       </div>
     )

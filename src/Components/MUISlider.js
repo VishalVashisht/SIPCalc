@@ -1,8 +1,9 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
+import Grid from '@mui/material/Grid';
 
-const mark1 = [  {
+const mark1 = [{
     value: 50000,
     label: '50000',
   },
@@ -58,7 +59,6 @@ const mark2 = [  {
 
 
 export default function MUISlider({value, handleChange, min, max, step, field}){
-
     return (
         <div className='container'>
         <Box  sx={{ width:570, margin:1}}>
@@ -69,9 +69,32 @@ export default function MUISlider({value, handleChange, min, max, step, field}){
             max={max}
             step={step}
             marks={field==='monthlyInvestment' ? mark1 : mark2}
-            
             valueLabelDisplay="auto"
           />
+          
+          <Grid className="demo" container>
+                <Grid item>
+                    <Typography gutterBottom>
+                    {titleArr[index]}
+                    </Typography>
+                </Grid>
+
+                <Grid item>
+                
+                <Input2  
+                        value={value}
+                        size="small"
+                        onChange={handleInputChange}
+                        inputProps={{
+                            step: 1,
+                            min: mn,
+                            max: mx,
+                        }}
+                        />
+                    
+                </Grid>
+                
+            </Grid>
         </Box>
         </div>
       );
