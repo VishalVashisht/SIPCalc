@@ -48,7 +48,7 @@
   display: inline-block;
   border:2px solid #F5F5F5;
   border-radius: 1%;
-  width:45%;
+  width:43%;
   height: 73vh;
   margin-top: 2%;
   vertical-align: top;
@@ -110,9 +110,10 @@ h3{
 
 
 .graphHeader{
-  margin-left: 20px;
+  margin-left: 30px;
+  margin-bottom: 50px;
   padding-top: 25px;
-  color: #888989
+  color: #605e5e
 }
 .graphFooter{
   margin-left: 5px;
@@ -128,4 +129,8 @@ h3{
 }
 .monthlyinvestment{
   color: #0BA77A;
+}
+.totalamount{
+  padding-top: 5px;
+  padding-bottom: 5px;
 }

@@ -3,25 +3,25 @@ import Graph from "./Graph";
 import { React, useState } from "react";
 
 export default function SIPCalc(){
-  const[mi, setValuemi] = useState(0);
+  const[mi, setValuemi] = useState(10000);
 
   const handleMi = (event)=>{
       setValuemi(mi);
   };
 
-  const[ip, setValueip] = useState(0);
+  const[ip, setValueip] = useState(5);
 
   const handleIp = (event)=>{
       setValueip(ip);
   };
 
-  const[ror, setValueror] = useState(0);
+  const[ror, setValueror] = useState(10);
 
   const handleRor = (event)=>{
       setValueror(ror);
   };
 
-  const[roi, setValueroi] = useState(0);
+  const[roi, setValueroi] = useState(2);
 
   const handleRoi = (event)=>{
       setValueroi(roi);

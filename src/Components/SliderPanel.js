@@ -89,11 +89,12 @@ export default function SliderPanel({ field, panelName, min, max, value, setVal 
                     <div className="Input">
                         <Grid className="demo" container>
                             <Input2
+                                type="number"
                                 value={value}
                                 size="small"
                                 onChange={handleInputChange}
                                 inputProps={{
-                                    step: 0.1,
+                                    step: 1,
                                     min: min,
                                     max: max
                                 }}
@@ -108,7 +109,7 @@ export default function SliderPanel({ field, panelName, min, max, value, setVal 
                             getAriaValueText={valuetext}
                             min={min}
                             max={max}
-                            step={0.1}
+                            step={1}
                             marks={field === 'monthlyInvestment' ? mark1 : mark2}
                             onChange={handleSliderChange}
                             valueLabelDisplay="auto"
