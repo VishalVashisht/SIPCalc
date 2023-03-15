@@ -3,34 +3,134 @@
   margin: 0;
 }
 
-
 .super-div{
   display: block;
   width: 100%;
   height: 100vh;
   border: 2px;
-  /* background-color: black; */
-  background-color: white;
+  background-color: #F1F5FA;
 }
 
 .dashboard-div{
-  /* background-color: rgb(60, 60, 134); */
-  background-color: #1AA7EC;;
+  background-color: #526FE4;
   display: inline-block;
   width: 12%;
   height: 100%;
-  padding-top: 0;
+  /* padding-top: 0; */
+  /* text-align: center; */
+  color: white;
 }
 
 .white-div{
-  /* align-items:flex-end; */
   background-color: white;
   display: inline-block;
-  width: 81%;
-  height: 90%;
+  width: 85%;
+  height: 92%;
   vertical-align: top;
   margin-top: 3%;
-  margin-left: 4%;
-  margin-right: 3%;
-  margin-bottom: 3%;
+  margin-left: 1.5%;
+  /* padding-left: 50px; */
+}
+
+.leftPanel{
+  display: inline-block;
+  border:2px solid #F5F5F5;
+  border-radius: 1%;
+  width:44%;
+  height: 73vh;
+  margin-top: 2%;
+  margin-left: 3%;
+  margin-right: 1%;
+  padding-left: 25px; 
+}
+
+.rightPanel{
+  display: inline-block;
+  border:2px solid #F5F5F5;
+  border-radius: 1%;
+  width:43%;
+  height: 73vh;
+  margin-top: 2%;
+  vertical-align: top;
+  padding-right: 3%;
+}
+
+.whiteDivHeader{
+  margin-left: 35px;
+}
+
+.container{
+  display: grid;
+  place-items: center;
+  margin-left: 10px;
+  padding-right: 50px;
+}
+
+input{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 7px;
+  background-color: #D3DFFE;
+  border-radius: 4px;
+  outline: none;
+  opacity: 1;
+}
+
+::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #3a7bec;
+  cursor: pointer;
+  border: 4px solid #D3DFFE;
+}
+
+.sliderhead{
+  display: inline;
+}
+h3{
+  display: inline;
+}
+
+.slider{
+  margin-top: 25px;
+}
+
+.Input{
+  float:right;
+  margin-right: 10px;
+  background-color: #ECF1FC;
+  border: none;
+  text-align: center;
+  width:20%;
+  height: 4vh;
+}
+
+
+.graphHeader{
+  margin-left: 30px;
+  margin-bottom: 50px;
+  padding-top: 25px;
+  color: #605e5e
+}
+.graphFooter{
+  margin-left: 5px;
+}
+.timeperiod{
+  color:black
+}
+.totalamount{
+  color:#4B6AE2;
+}
+.potentialcapitalgain{
+  color: #FFAD85;
+}
+.monthlyinvestment{
+  color: #0BA77A;
+}
+.totalamount{
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
